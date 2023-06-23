@@ -101,7 +101,7 @@ function GstLaunch() {
   
         var output = SpawnSync(
             gst_launch_path, [gst_launch_versionarg], {
-              'timeout': 1000
+              'timeout': 10000
             })
           .stdout;
   
