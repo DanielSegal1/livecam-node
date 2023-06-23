@@ -25,8 +25,8 @@ function GstLaunch() {
       if (OS.platform() == 'win32') {
         // On Windows, GStreamer MSI installer defines the following
         // environment variables.
-        const detected_path_x64 = process.env.GSTREAMER_1_0_ROOT_X86_64;
-        const detected_path_x32 = process.env.GSTREAMER_1_0_ROOT_X86;
+        const detected_path_x64 = process.env.GSTREAMER_1_0_ROOT_X86_64 ?? process.env.GSTREAMER_1_0_ROOT_MSVC_X86_64;
+        const detected_path_x32 = process.env.GSTREAMER_1_0_ROOT_X86 ?? process.env.GSTREAMER_1_0_ROOT_MSVC_X86;
         if (detected_path_x64 || detected_path_x32) {
           // If both variables are present, favor the architecture
           // of GStreamer which is the same as Node.js runtime.
