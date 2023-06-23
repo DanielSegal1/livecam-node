@@ -1,6 +1,6 @@
 {
   "name": "livecam-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fork of the livecam module. Webcam live-streaming solution using GStreamer and Node.js",
   "main": "livecam.js",
   "repository": {
@@ -19,6 +19,6 @@
   "homepage": "https://github.com/DanielSegal1/livecam-node#readme",
   "dependencies": {
     "dicer": "^0.3.1",
-    "socket.io": "^4.7.0"
+    "socket.io": "^1.7.4"
   }
 }
