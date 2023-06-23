@@ -1,6 +1,6 @@
 {
   "name": "livecam-node",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "fork of the livecam module. Webcam live-streaming solution using GStreamer and Node.js",
   "main": "livecam.js",
   "repository": {
